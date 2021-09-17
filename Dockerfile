@@ -7,7 +7,6 @@ ADD "https://github.com/ZanyMonk/beatbot.git" skipcache
 RUN git clone https://github.com/ZanyMonk/beatbot.git /opt/beatbot
 WORKDIR /opt/beatbot
 
-RUN pip install pipx
 RUN pip install -r requirements.txt
 
 COPY .env .env
